@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LivrariaAPI</name>
+    </assembly>
+    <members>
+        <member name="P:LivrariaAPI.Data.Dtos.AluguelDtoRegister.Id">
+            <summary>
+            Id do aluguel (Auto Incrementado)
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.AluguelDtoRegister.LivroId">
+            <summary>
+            Id do livro alugado
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.AluguelDtoRegister.UsuarioId">
+            <summary>
+            Id do Cliente que realizou o aluguel
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.AluguelDtoRegister.AluguelFeito">
+            <summary>
+            Dia em que o Aluguel é feito (Auto Incrementado)
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.AluguelDtoRegister.PrevisaoEntrega">
+            <summary>
+            Data prevista da devolução
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.AluguelDtoRegister.Devolucao">
+            <summary>
+            Data da devolução
+            </summary>
+        </member>
+        <member name="T:LivrariaAPI.Data.Dtos.EditoraRegisterDto">
+            <summary>
+            DTO de Editora para Registrar
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.EditoraRegisterDto.Id">
+            <summary>
+            ID do Editora (auto incremento )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.EditoraRegisterDto.Nome">
+            <summary>
+            Nome da Editora
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.EditoraRegisterDto.Cidade">
+            <summary>
+            Cidade da Editora
+            </summary>
+        </member>
+        <member name="T:LivrariaAPI.Data.Dtos.LivroResgisterDto">
+            <summary>
+            DTO de Livro para Registrar
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.LivroResgisterDto.Id">
+            <summary>
+            ID do livro (auto incrementado )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.LivroResgisterDto.Nome">
+            <summary>
+            Nome do Livro ( Obrigat�rio )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.LivroResgisterDto.Autor">
+            <summary>
+            Nome do Autor do Livro ( Obrigat�rio )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.LivroResgisterDto.Lancamento">
+            <summary>
+            Data de lan�amento do Livro ( Obrigat�rio )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.LivroResgisterDto.Quantidade">
+            <summary>
+            Quantidade de Livros no estoque ( Obrigat�rio )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.LivroResgisterDto.EditoraId">
+            <summary>
+            ID da Editora do Livro ( Obrigat�rio )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.UsuarioDtoRegister.Id">
+            <summary>
+            Id do Usuário (Auto Incrementado)
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.UsuarioDtoRegister.Nome">
+            <summary>
+            Nome do Usuário
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.UsuarioDtoRegister.Email">
+            <summary>
+            Email do Usuário
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.UsuarioDtoRegister.Cidade">
+            <summary>
+            Email do Usuário
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Data.Dtos.UsuarioDtoRegister.Endereco">
+            <summary>
+            Endereço do Usuário
+            </summary>
+        </member>
+        <member name="T:LivrariaAPI.Data.EditoraRepo.EditoraRepository">
+            <summary>
+            Repositório de Editora
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsAluguel.PageNumber">
+            <summary>
+            Página atual
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsAluguel.PageSize">
+            <summary>
+            Itens por página
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsEditora.PageNumber">
+            <summary>
+            Página atual
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsEditora.PageSize">
+            <summary>
+            Itens por página
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsEditora.Nome">
+            <summary>
+            Filtra a editora pelo nome
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsEditora.Cidade">
+            <summary>
+            Filtra a editora pela cidade
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsLivro.PageNumber">
+            <summary>
+            Página Atual
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsLivro.PageSize">
+            <summary>
+            Itens por página
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsLivro.Nome">
+            <summary>
+            Filtra o livro pelo nome
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsLivro.Autor">
+            <summary>
+            Filtra o livro pelo Autor
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsLivro.Lancamento">
+            <summary>
+            Filtra o livro pelo lançamento
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsUsuario.PageNumber">
+            <summary>
+            Página atual
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsUsuario.PageSize">
+            <summary>
+            Itens por página
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsUsuario.Nome">
+            <summary>
+            Filtra o usuário pelo nome
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsUsuario.Sobrenome">
+            <summary>
+            Filtra o usuário pelo sobrenome
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsUsuario.Email">
+            <summary>
+            Filtra o usuário pelo email
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsUsuario.Cidade">
+            <summary>
+            Filtra o usuário pela cidade
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Helpers.PageParams.PageParamsUsuario.Endereco">
+            <summary>
+            Filtra o usuário pelo endereço
+            </summary>
+        </member>
+        <member name="T:LivrariaAPI.Models.Livro">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Models.Livro.Id">
+            <summary>
+            ID do livro (auto incremento )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Models.Livro.Nome">
+            <summary>
+            Nome do Livro ( Obrigatório )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Models.Livro.Autor">
+            <summary>
+            Nome do Autor do Livro ( Obrigatório )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Models.Livro.Lancamento">
+            <summary>
+            Data de lançamento do Livro ( Obrigatório )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Models.Livro.Quantidade">
+            <summary>
+            Quantidade de Livros no estoque ( Obrigatório )
+            </summary>
+        </member>
+        <member name="P:LivrariaAPI.Models.Livro.EditoraId">
+            <summary>
+            ID da Editora do Livro ( Obrigatório )
+            </summary>
+        </member>
+        <member name="T:LivrariaAPI.V1.Controllers.AluguelController">
+            <summary>
+            Versão 1.0 do Controller de Algueis
+            </summary>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.AluguelController.#ctor(LivrariaAPI.Data.AlguelRepo.IAluguelRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.AluguelController.Get(LivrariaAPI.Helpers.PageParams.PageParamsAluguel)">
+            <summary>
+            Método que retorna todos os alugueis
+            </summary>
+            <param name="pageParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.AluguelController.GetLast(LivrariaAPI.Helpers.PageParams.PageParamsAluguel)">
+            <summary>
+            Método que retorna todos alugueis em ordem decrescente
+            </summary>
+            <param name="pageParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.AluguelController.GetbyId(System.Int32)">
+            <summary>
+            Método que retorna apenas um aluguel
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.AluguelController.Post(LivrariaAPI.Data.Dtos.AluguelDtoRegister)">
+            <summary>
+            Método para inserção de dados
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.AluguelController.Put(System.Int32,LivrariaAPI.Data.Dtos.AluguelDtoRegister)">
+            <summary>
+            Método para atualização de um dado por inteiro
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.AluguelController.Delete(System.Int32)">
+            <summary>
+            Método que deleta um dado
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LivrariaAPI.V1.Controllers.EditoraController">
+            <summary>
+            Versão 1.0 do Controller de editoras
+            </summary>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.EditoraController.#ctor(LivrariaAPI.Data.EditoraRepo.IEditoraRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.EditoraController.Get(LivrariaAPI.Helpers.PageParams.PageParamsEditora)">
+            <summary>
+            Método que retorna todas as editoras
+            </summary>
+            <param name="pageParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.EditoraController.GetbyId(System.Int32)">
+            <summary>
+            Método que retorna apenas uma editora
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.EditoraController.Post(LivrariaAPI.Data.Dtos.EditoraRegisterDto)">
+            <summary>
+            Metodo para inserção de dados
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.EditoraController.Put(System.Int32,LivrariaAPI.Data.Dtos.EditoraRegisterDto)">
+            <summary>
+            Metodo para atualização de um dado por inteiro
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.EditoraController.Delete(System.Int32)">
+            <summary>
+            Método de deleta de um dado
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LivrariaAPI.V1.Controllers.LivroController">
+            <summary>
+            Versão 1.0 do Controller de livros
+            </summary>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.LivroController.#ctor(LivrariaAPI.Data.LivroRepo.ILivroRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.LivroController.Get(LivrariaAPI.Helpers.PageParams.PageParamsLivro)">
+            <summary>
+            Método que retorna todos os Livros
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.LivroController.GetbyId(System.Int32)">
+            <summary>
+            Método que retorna um único livro   
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.LivroController.Post(LivrariaAPI.Data.Dtos.LivroResgisterDto)">
+            <summary>
+            Método para inserção de dados
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.LivroController.Put(System.Int32,LivrariaAPI.Data.Dtos.LivroResgisterDto)">
+            <summary>
+            Método para atualização de um dado inteira
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.LivroController.Delete(System.Int32)">
+            <summary>
+            Método deleta um dado
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LivrariaAPI.V1.Controllers.UsuarioController">
+            <summary>
+            Versão 1.0 do Controller de Usuários
+            </summary>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.UsuarioController.#ctor(LivrariaAPI.Data.UsuarioRepo.IUsuarioRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.UsuarioController.Get(LivrariaAPI.Helpers.PageParams.PageParamsUsuario)">
+            <summary>
+            Método que retorna todos os Usuários
+            </summary>
+            <param name="pageParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.UsuarioController.GetbyId(System.Int32)">
+            <summary>
+            Método que retorna apenas um usuário
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.UsuarioController.Post(LivrariaAPI.Data.Dtos.UsuarioDtoRegister)">
+            <summary>
+            Método para inserção de dados
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.UsuarioController.Put(System.Int32,LivrariaAPI.Data.Dtos.UsuarioDtoRegister)">
+            <summary>
+            Método para atualização de um dado por inteiro
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LivrariaAPI.V1.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Método que deleta um dado
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
