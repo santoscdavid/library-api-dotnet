@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace LivrariaAPI.Migrations
+namespace LivrariaAPI.Data.Migrations
 {
-    public partial class init : Migration
+    public partial class Meetup : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hELYXo4CjlRuGb99SlOBgR0zMeDOa8Uf8cYhEPD1iIS7/snTdPAKLCrPfc3qYI1iK9A2b3VDIy0f2DWWFCG7uA==",
+  "dgSpecHash": "0i1udtcHgGpHxwHZzULaVQs0FDUQEbXe/+/t060yMIWnRPsbuL0DJrx+DetyNwhBGi+8rU4GlSPnZt5zOXbDoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaAPI\\LivrariaAPI.csproj",
+  "projectFilePath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace LivrariaAPI.Migrations
+namespace LivrariaAPI.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20211104165109_init")]
-    partial class init
+    [Migration("20211104194716_Meetup")]
+    partial class Meetup
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

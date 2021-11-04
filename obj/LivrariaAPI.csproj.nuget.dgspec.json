@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaAPI\\LivrariaAPI.csproj": {}
+    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaAPI\\LivrariaAPI.csproj": {
+    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaAPI\\LivrariaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj",
         "projectName": "LivrariaAPI",
-        "projectPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaAPI\\LivrariaAPI.csproj",
+        "projectPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaAPI\\obj\\",
+        "outputPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
