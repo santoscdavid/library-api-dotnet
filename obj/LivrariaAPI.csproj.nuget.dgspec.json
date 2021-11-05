@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj": {}
+    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\LivrariaAPI\\LivrariaAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj": {
+    "C:\\Users\\david\\source\\repos\\LivrariaAPI\\LivrariaAPI\\LivrariaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\LivrariaAPI\\LivrariaAPI.csproj",
         "projectName": "LivrariaAPI",
-        "projectPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj",
+        "projectPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\LivrariaAPI\\LivrariaAPI.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\obj\\",
+        "outputPath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\LivrariaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,6 +83,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.11.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

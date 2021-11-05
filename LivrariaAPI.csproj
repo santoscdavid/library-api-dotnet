@@ -7,6 +7,7 @@
     <NoWarn>1701;1702;ASP0000</NoWarn>
     <DocumentationFile>LivrariaAPI.xml</DocumentationFile>
     <WarningLevel>2</WarningLevel>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,12 +27,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
   </ItemGroup>
-
-  	<Target Name="PrePublishTarget" AfterTargets="Publish">
-		<Exec Command="dotnet ef database update" />
-	</Target>
 
 </Project>

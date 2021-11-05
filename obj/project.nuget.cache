@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fRtx1jKI9mFsbJVCxuSzsUxcxDkT3CoIyeahWeq1NV4tWBlrK1gV+TGTkJIUWbGeAbwIdd5oY4dZ+JQCfFqPfQ==",
+  "dgSpecHash": "Ar9LRQp4p0h/EMwI6egDoJKmydhJ9tF6lXmUW7nBMXhHt4IQwsgiA7HLDbmzeH6mES0jksJdgxwDlkUAfNqdow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\livrariaapi\\LivrariaAPI.csproj",
+  "projectFilePath": "C:\\Users\\david\\source\\repos\\LivrariaAPI\\LivrariaAPI\\LivrariaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
@@ -61,6 +61,7 @@
     "C:\\Users\\david\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
