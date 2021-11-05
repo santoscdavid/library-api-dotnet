@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace LivrariaAPI.Data.Migrations
 {
@@ -12,7 +13,7 @@ namespace LivrariaAPI.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Username = table.Column<string>(nullable: true),
                     Nome = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true),
@@ -30,7 +31,7 @@ namespace LivrariaAPI.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nome = table.Column<string>(nullable: true),
                     Cidade = table.Column<string>(nullable: true)
                 },
@@ -44,7 +45,7 @@ namespace LivrariaAPI.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nome = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     Cidade = table.Column<string>(nullable: true),
@@ -60,7 +61,7 @@ namespace LivrariaAPI.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nome = table.Column<string>(nullable: true),
                     Autor = table.Column<string>(nullable: true),
                     Lancamento = table.Column<int>(nullable: false),
@@ -83,7 +84,7 @@ namespace LivrariaAPI.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     LivroId = table.Column<int>(nullable: false),
                     UsuarioId = table.Column<int>(nullable: false),
                     AluguelFeito = table.Column<DateTime>(nullable: false),
@@ -111,26 +112,6 @@ namespace LivrariaAPI.Data.Migrations
                 table: "Admins",
                 columns: new[] { "Id", "Ativo", "Cargo", "Email", "Nome", "Password", "Username" },
                 values: new object[] { 1, 1, "admin", "admin@admin.com", "admin", "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918", "admin" });
-
-            migrationBuilder.InsertData(
-                table: "Editoras",
-                columns: new[] { "Id", "Cidade", "Nome" },
-                values: new object[] { 1, "Rio de Janeiro", "Rocco" });
-
-            migrationBuilder.InsertData(
-                table: "Usuarios",
-                columns: new[] { "Id", "Cidade", "Email", "Endereco", "Nome" },
-                values: new object[] { 1, "Fortaleza", "teste@teste,com", "Rua X, 123", "David Cavalcante dos Santos" });
-
-            migrationBuilder.InsertData(
-                table: "Livros",
-                columns: new[] { "Id", "Autor", "EditoraId", "Lancamento", "Nome", "Quantidade" },
-                values: new object[] { 1, "J.K Rowling", 1, 2001, "Harry Potter", 20 });
-
-            migrationBuilder.InsertData(
-                table: "Alugueis",
-                columns: new[] { "Id", "AluguelFeito", "Devolucao", "LivroId", "PrevisaoEntrega", "UsuarioId" },
-                values: new object[] { 1, new DateTime(2021, 11, 4, 0, 0, 0, 0, DateTimeKind.Local), null, 1, new DateTime(2021, 2, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Alugueis_LivroId",

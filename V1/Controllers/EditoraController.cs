@@ -115,11 +115,6 @@ namespace LivrariaAPI.V1.Controllers
             var edit = await _repo.GetEditoraByIdAsync(id);
             if (edit == null) return NotFound("Editora não foi encontrada");
 
-            if (await _repo.GetEditbyName(edit.Nome) != null)
-            {
-                return BadRequest(new { error = "Editora já cadastrado" });
-            }
-
             _mapper.Map(model, edit);
 
             var editUpd = await _repo.UpdateEditoraAsync(edit);

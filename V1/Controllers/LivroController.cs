@@ -112,11 +112,6 @@ namespace LivrariaAPI.V1.Controllers
             var livro = await _repo.GetLivroByIdAsync(id, true);
             if (livro == null) return NotFound("Livro não foi encontrado");
 
-            if (await _repo.GetLivrobyName(livro.Nome) != null)
-            {
-                return BadRequest(new { error = "Livro já cadastrado" });
-            }
-
             _mapper.Map(model, livro);
 
             var livroUpd = await _repo.UpdateLivroAsync(livro);

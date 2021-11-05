@@ -1,4 +1,7 @@
 using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace LivrariaAPI.Models
 {
     public class Aluguel
@@ -17,6 +20,8 @@ namespace LivrariaAPI.Models
             this.UsuarioId = usuarioId;
             this.PrevisaoEntrega = previsaoEntrega;
         }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int LivroId { get; set; }
         public Livro Livro { get; set; }

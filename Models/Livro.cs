@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LivrariaAPI.Models
 {
@@ -23,9 +25,9 @@ namespace LivrariaAPI.Models
             this.Quantidade = quantidade;
             this.EditoraId = editoraId;
         }
-        /// <summary>
-        /// ID do livro (auto incremento )
-        /// </summary>
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         /// <summary>
         /// Nome do Livro ( Obrigatório )

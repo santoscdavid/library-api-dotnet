@@ -214,11 +214,6 @@
             
             </summary>
         </member>
-        <member name="P:LivrariaAPI.Models.Livro.Id">
-            <summary>
-            ID do livro (auto incremento )
-            </summary>
-        </member>
         <member name="P:LivrariaAPI.Models.Livro.Nome">
             <summary>
             Nome do Livro ( Obrigatório )

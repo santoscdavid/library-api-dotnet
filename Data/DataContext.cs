@@ -19,33 +19,12 @@ namespace LivrariaAPI.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<Aluguel>()
-                .HasKey(A => A.Id);
+            builder.UseIdentityColumns();
 
             builder.Entity<Usuario>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
 
-            builder.Entity<Usuario>()
-                .HasData(new List<Usuario>(){
-                    new Usuario(1, "David Cavalcante dos Santos",
-                             "teste@teste,com", "Fortaleza",
-                             "Rua X, 123"),
-                });
-            builder.Entity<Editora>()
-                .HasData(new List<Editora>(){
-                    new Editora(1, "Rocco", "Rio de Janeiro"),
-                });
-            builder.Entity<Livro>()
-                .HasData(new List<Livro>(){
-                    new Livro(1, "Harry Potter", "J.K Rowling", 2001, 20, 1),
-                });
-            builder.Entity<Aluguel>()
-                .HasData(new List<Aluguel>(){
-                    new Aluguel(1,1,1,DateTime.Parse("2021-02-22"),
-                                    DateTime.Parse("2021-02-22"),
-                                    DateTime.Parse("2021-03-22"))
-                });
             builder.Entity<Admin>()
                 .HasData(new List<Admin>(){
                     new Admin(1, "admin", "admin", sha256_hash("admin"), 1, "admin", "admin@admin.com" )
