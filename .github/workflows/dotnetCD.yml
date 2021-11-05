@@ -39,7 +39,7 @@ jobs:
        with:
          files: 'appsettings.json'
        env: 
-         ConnectionsStrings.Default: ${{ secrets.DB_CONNECTION_STRING }}
+         ConnectionStrings.Default: ${{ secrets.DB_CONNECTION_STRING }}
      - uses: akhileshns/heroku-deploy@v3.12.12
        with:
          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
