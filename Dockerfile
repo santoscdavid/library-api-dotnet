@@ -5,10 +5,10 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["LivrariaAPI/LivrariaAPI.csproj", "LivrariaAPI/"]
-RUN dotnet restore "LivrariaAPI/LivrariaAPI.csproj"
+COPY ["LivrariaAPI.csproj", "."]
+RUN dotnet restore "LivrariaAPI.csproj"
 COPY . .
-WORKDIR "/src/LivrariaAPI"
+WORKDIR "/src/."
 RUN dotnet build "LivrariaAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish
