@@ -40,7 +40,7 @@ namespace LivrariaAPI
 
             services.AddEntityFrameworkNpgsql().AddDbContext<DataContext>(options =>
             {
-                options.UseNpgsql(Configuration.GetConnectionString("Default"))
+                options.UseNpgsql(Configuration.GetConnectionString("Default"));
             });
 
             services.AddCors();
